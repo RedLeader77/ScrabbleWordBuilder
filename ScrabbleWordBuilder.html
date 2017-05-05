@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" >
+<head>
+<!--
+   Author: Greg King
+   Project: Scrabble Word Builder
+   Date Created: 4/28/2017
+-->
+
+<title>Scrabble Word Builder</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="scrabble, word, builder" />
+<link href="ScrabbleWordBuilder.css" rel="stylesheet" type="text/css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="ScrabbleWordBuilder.js"></script>
+</head>
+
+<body>
+
+<form>
+    <label id="titleLabel">Scrabble Word Builder</label>
+    <label id="initMessage">Initializing app...</label>
+    <label id="letterTrackerLabel" class="formItem" for="letterTrackerTextArea">Letter Tracker</label>
+    <textarea readonly id="letterTrackerTextArea" class="formItem"></textarea>
+    <label id="rackLabel" class="formItem" for="rackTextArea">Rack</label>
+    <textarea id="rackTextArea" class="formItem"></textarea>
+    <label id="wordLabel" class="formItem" for="wordTextArea">Word (Optional)</label>
+    <textarea id="wordTextArea" class="formItem"></textarea>
+    <input type="button" id="processButton" class="formItem" value="Process">
+    <input type="button" id="resetButton" class="formItem" value="Reset">
+    <label id="outputLabel" class="formItem" for="outputTextArea">Output</label>
+    <textarea readonly id="outputTextArea" class="formItem"></textarea>
+    <label id="wordScoreLabel" class="formItem" for="wordScoreTextArea">Word Score</label>
+    <textarea readonly id="wordScoreTextArea" class="formItem"></textarea>
+</form>
+
+<script>initializeApp()</script>
+
+</body>
+</html>
